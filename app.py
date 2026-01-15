@@ -21,7 +21,8 @@ if prompt := st.chat_input("What is up?"):
 
     response = requests.post(
         url="http://localhost:8000/chat", params={"message": prompt}
-    ).json()["message"]
+    ).json()["message"][-1]["content"]
+    
     # Display assistant response in chat message container
     with st.chat_message("assistant"):
         st.markdown(response)
