@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+streamlit
+langchain-groq
+groq
+langgraph
+dotenv
+langchain
